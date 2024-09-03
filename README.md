@@ -26,14 +26,14 @@ composer require bakhodirov/laravel-example
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-example-migrations"
+php artisan vendor:publish --tag="example-migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-example-config"
+php artisan vendor:publish --tag="example-config"
 ```
 
 This is the contents of the published config file:
@@ -46,7 +46,7 @@ return [
 Optionally, you can publish the views using
 
 ```bash
-php artisan vendor:publish --tag="laravel-example-views"
+php artisan vendor:publish --tag="example-views"
 ```
 
 ## Usage
