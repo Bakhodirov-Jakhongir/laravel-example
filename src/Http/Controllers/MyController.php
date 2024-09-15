@@ -19,4 +19,9 @@ class MyController extends Controller
             'message' => 'success'
         ]);
     }
+
+    public function returnIndexView()
+    {
+        return view('example::index');
+    }
 }

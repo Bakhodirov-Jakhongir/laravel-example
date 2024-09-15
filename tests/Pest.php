@@ -4,5 +4,5 @@ use Bakhodirov\LaravelExample\Tests\TestCase;
 use Illuminate\Support\Facades\Route;
 
 uses(TestCase::class)->beforeEach(function () {
-    Route::example();
+    Route::api();
 })->in(__DIR__);
