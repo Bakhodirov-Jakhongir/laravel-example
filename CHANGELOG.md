@@ -2,6 +2,11 @@
 
 All notable changes to `laravel-example` will be documented in this file.
 
+## Writing tests to model and fix bugs - 2024-09-15
+
+- write unit tests to MyModel class using factory
+- fix namespaces declaration in MyModel and MyModelFactory classes
+
 ## New Feature: adding models and migrations and config files - 2024-09-05
 
 - New Feature: adding models and migrations and config files
