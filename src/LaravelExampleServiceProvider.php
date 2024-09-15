@@ -2,8 +2,8 @@
 
 namespace Bakhodirov\LaravelExample;
 
-use Bakhodirov\LaravelExample\Http\Controllers\MyController;
 use Bakhodirov\LaravelExample\Commands\LaravelExampleCommand;
+use Bakhodirov\LaravelExample\Http\Controllers\MyController;
 use Illuminate\Support\Facades\Route;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;

@@ -16,7 +16,7 @@ class MyController extends Controller
     {
         return response()->json([
             'status' => true,
-            'message' => 'success'
+            'message' => 'success',
         ]);
     }
 }
