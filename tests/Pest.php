@@ -1,5 +1,8 @@
 <?php
 
 use Bakhodirov\LaravelExample\Tests\TestCase;
+use Illuminate\Support\Facades\Route;
 
-uses(TestCase::class)->in(__DIR__);
+uses(TestCase::class)->beforeEach(function () {
+    Route::example();
+})->in(__DIR__);

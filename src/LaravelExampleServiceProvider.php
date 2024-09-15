@@ -2,7 +2,9 @@
 
 namespace Bakhodirov\LaravelExample;
 
+use Bakhodirov\LaravelExample\Http\Controllers\MyController;
 use Bakhodirov\LaravelExample\Commands\LaravelExampleCommand;
+use Illuminate\Support\Facades\Route;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -21,5 +23,16 @@ class LaravelExampleServiceProvider extends PackageServiceProvider
             ->hasViews()
             ->hasMigration('create_my_models_table.php.stub')
             ->hasCommand(LaravelExampleCommand::class);
+    }
+
+    public function packageRegistered()
+    {
+        Route::macro('example', function (string $baseUrl = 'example') {
+            Route::prefix($baseUrl)->group(function () {
+                Route::get('/', [MyController::class, 'index']);
+            });
+        });
+
+        Route::get('my-first-route', [MyController::class, 'getMessage']);
     }
 }
