@@ -2,10 +2,10 @@
 
 namespace Bakhodirov\LaravelExample\Database\Factories;
 
-use Bakhodirov\Models\MyModel;
+use Bakhodirov\LaravelExample\Models\MyModel;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class ModelFactory extends Factory
+class MyModelFactory extends Factory
 {
     protected $model = MyModel::class;
 
